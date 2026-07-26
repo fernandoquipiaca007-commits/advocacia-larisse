@@ -51,12 +51,9 @@ export const Differentials: React.FC = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#C8A45B]/15 border border-[#C8A45B]/40 flex items-center justify-center text-[#E6C97A] mb-4 group-hover:scale-110 group-hover:bg-[#C8A45B] group-hover:text-black transition-all">
                   <Icon className="w-5 h-5" />
                 </div>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-[#E6C97A] font-bold">✔</span>
-                  <h3 className="text-base font-bold font-sora text-white">
-                    {d.title}
-                  </h3>
-                </div>
+                <h3 className="text-base font-bold font-sora text-white mb-2">
+                  {d.title}
+                </h3>
                 <p className="text-xs text-gray-400 leading-relaxed font-normal">
                   {d.desc}
                 </p>
