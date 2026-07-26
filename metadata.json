@@ -1,0 +1,6 @@
+{
+  "name": "Frutuoso Advocacia & Assessoria Jurídica",
+  "description": "Landing page de alta conversão para captação de leads jurídicos em Golpe do PIX, Ludopatia e Direito Trabalhista.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+/* Custom Gold Color Utilities */
+.text-gold {
+  color: #C8A45B;
+}
+
+.text-gold-light {
+  color: #E6C97A;
+}
+
+.bg-gold {
+  background-color: #C8A45B;
+}
+
+.bg-gold-light {
+  background-color: #E6C97A;
+}
+
+.border-gold {
+  border-color: #C8A45B;
+}
+
+.border-gold-glow {
+  border-color: rgba(200, 164, 91, 0.4);
+  box-shadow: 0 0 15px rgba(200, 164, 91, 0.15);
+}
+
+.border-gold-glow:hover {
+  border-color: #C8A45B;
+  box-shadow: 0 0 25px rgba(200, 164, 91, 0.35);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #E6C97A 0%, #C8A45B 50%, #9A7B39 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0C2 0%, #E6C97A 40%, #C8A45B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #E6C97A 0%, #C8A45B 100%);
+  color: #000000;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold:hover {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A45B;
+}
+
