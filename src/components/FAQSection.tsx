@@ -6,24 +6,32 @@ export const FAQSection: React.FC = () => {
 
   const faqs = [
     {
+      q: 'O que é Ludopatia e como saber se sou ludopata?',
+      a: 'A Ludopatia (CID F.63) é o Transtorno do Jogo Compulsivo, reconhecido pela OMS como uma doença mental. Alguns sinais comuns: apostar mais do que pode perder, sentir urgência para apostar, usar crédito ou dinheiro de terceiros para jogar, esconder as apostas de familiares, e continuar apostando mesmo com prejuízos recorrentes. Cada caso é único — o ideal é solicitar uma análise com a Dra. Larisse para entender sua situação específica.',
+    },
+    {
+      q: 'Posso recuperar os valores perdidos nas plataformas de bets?',
+      a: 'Dependendo da análise do caso, sim. As plataformas de apostas têm deveres legais de proteção ao consumidor e ao ludopata. Práticas como oferta abusiva de crédito, ausência de limites de apostas e estímulos compulsivos podem gerar responsabilidade civil. A viabilidade de cada ação é avaliada individualmente, considerando o histórico de apostas, contratos e movimentações bancárias.',
+    },
+    {
+      q: 'As plataformas de bets podem ser responsabilizadas legalmente?',
+      a: 'Sim. Conforme a regulamentação de apostas esportivas no Brasil e o Código de Defesa do Consumidor, as plataformas têm obrigações de segurança, limites de apostas e proteção ao jogador compulsivo. Quando descumprem essas obrigações, podem ser responsabilizadas judicialmente por perdas e danos.',
+    },
+    {
+      q: 'O que fazer em caso de Golpe do PIX?',
+      a: 'Aja imediatamente: entre em contato com seu banco para solicitar o Mecanismo Especial de Devolução (MED) e o bloqueio cautelar das contas receptoras. Em casos de golpe, as primeiras horas são críticas para maximizar as chances de recuperação. Registre o Boletim de Ocorrência logo em seguida.',
+    },
+    {
       q: 'Atendem online em todo o Brasil?',
-      a: 'Sim! Nosso escritório opera de forma 100% digital, atendendo clientes em todos os Estados brasileiros. Todas as reuniões, envio de documentos e assinaturas de procuração ocorrem de forma segura via WhatsApp e plataformas integradas.',
+      a: 'Sim! O escritório opera de forma 100% digital, atendendo clientes em todos os estados brasileiros. Todas as reuniões, envio de documentos e assinaturas de procuração ocorrem de forma segura via WhatsApp e plataformas integradas.',
     },
     {
       q: 'Quanto custa a análise do caso?',
-      a: 'A análise inicial da viabilidade do seu caso é realizada sem qualquer custo prévio. Apresentamos os honorários e formatos de atuação com total transparência e clareza antes de qualquer contratação.',
-    },
-    {
-      q: 'Quanto tempo demora para iniciar a ação jurídica?',
-      a: 'Ação imediata! Em casos urgentes como Golpe do PIX e bloqueio judicial/MED, as medidas preparatórias e notificações bancárias são emitidas nas primeiras horas após o recebimento da documentação.',
+      a: 'A análise inicial da viabilidade do seu caso é realizada sem qualquer custo prévio. Os honorários e formatos de atuação são apresentados com total transparência antes de qualquer contratação.',
     },
     {
       q: 'Como funciona o atendimento?',
-      a: 'É simples e prático: você envia um resumo da sua situação pelo formulário ou WhatsApp. Nossa equipe jurídica analisa o histórico e entra em contato direto com você para esclarecer os passos legais cabíveis.',
-    },
-    {
-      q: 'Posso enviar documentos pelo WhatsApp?',
-      a: 'Sim! Aceitamos fotos nítidas, prints de conversas, comprovantes de PIX, extatados bancários ou arquivos PDF diretamente pelo WhatsApp. Todos os dados são protegidos por rigoroso sigilo profissional da advocacia (Lei nº 8.906/94).',
+      a: 'É simples: você envia um resumo da sua situação pelo formulário ou WhatsApp. A equipe jurídica analisa o histórico e entra em contato direto para esclarecer os passos legais cabíveis ao seu caso, com o máximo de sigilo e agilidade.',
     },
   ];
 

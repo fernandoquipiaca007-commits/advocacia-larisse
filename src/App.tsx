@@ -8,6 +8,7 @@ import { Hero } from './components/Hero';
 import { UrgencyBar } from './components/UrgencyBar';
 import { CredibilityBanner } from './components/CredibilityBanner';
 import { PracticeAreas } from './components/PracticeAreas';
+import { WhatIsLudopathy } from './components/WhatIsLudopathy';
 import { HowItWorks } from './components/HowItWorks';
 import { Differentials } from './components/Differentials';
 import { VideoSection } from './components/VideoSection';
@@ -19,7 +20,7 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   const formRef = useRef<HTMLDivElement | null>(null);
-  const [selectedArea, setSelectedArea] = useState<string>('Golpe do PIX');
+  const [selectedArea, setSelectedArea] = useState<string>('Ludopatia');
 
   const scrollToForm = (area?: string) => {
     if (area) {
@@ -35,42 +36,44 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black text-white selection:bg-[#C8A45B] selection:text-black">
-      {/* 1. Hero Section (100vh layout) */}
-      <Hero onCtaClick={() => scrollToForm()} />
+      {/* 1. Hero Section */}
+      <Hero onCtaClick={() => scrollToForm('Ludopatia')} />
 
-      {/* 2. Fixed/Sticky Urgency Bar */}
+      {/* 2. Urgency Bar */}
       <UrgencyBar onCtaClick={() => scrollToForm()} />
 
       {/* 3. Credibility Banner */}
       <CredibilityBanner />
 
-      {/* 4. Practice Areas (Golpe do PIX, Ludopatia, Trabalhista) */}
+      {/* 4. Practice Areas (Ludopatia em destaque principal, PIX e Trabalhista como suporte) */}
       <PracticeAreas onSelectArea={(area) => scrollToForm(area)} />
 
-      {/* 5. How It Works (Gold Timeline) */}
+      {/* 5. O que é Ludopatia? (Nova Seção Educativa) */}
+      <WhatIsLudopathy onCtaClick={() => scrollToForm('Ludopatia')} />
+
+      {/* 6. How It Works */}
       <HowItWorks onCtaClick={() => scrollToForm()} />
 
-      {/* 6. Differentials */}
+      {/* 7. Differentials */}
       <Differentials />
 
-      {/* 7. Video Section (Explicativos Dra. Larisse) */}
+      {/* 8. Video Section */}
       <VideoSection onCtaClick={() => scrollToForm()} />
 
-      {/* 8. Post Video Conversion CTA */}
+      {/* 9. Post Video CTA */}
       <PostVideoCTA onCtaClick={() => scrollToForm()} />
 
-      {/* 9. FAQ Accordions */}
+      {/* 10. FAQ */}
       <FAQSection />
 
-      {/* 10. Lead Capture Form */}
+      {/* 11. Lead Capture Form */}
       <LeadForm initialArea={selectedArea} formRef={formRef} />
 
-      {/* 11. Floating WhatsApp Action */}
+      {/* 12. Floating WhatsApp */}
       <FloatingWhatsApp onCtaClick={() => scrollToForm()} />
 
-      {/* 12. Footer */}
+      {/* 13. Footer */}
       <Footer />
     </div>
   );
 }
-
